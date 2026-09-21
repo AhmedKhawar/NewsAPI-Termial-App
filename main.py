@@ -3,7 +3,7 @@ import requests
 while True:
     query = input("Enter the topic of the news you want to see: ")
     key="7639992b06704b1a912f7286e340fe38"
-    api = f"https://newsapi.org/v2/everything?q={query}&from=2025-07-04&sortBy=publishedAt&apiKey={key}"
+    api = f"https://newsapi.org/v2/everything?q={query}&apiKey={key}"
 
     content = requests.get(api)
 
